@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "build-scss": "sass src/scss:dist/css",
+    "watch-scss": "sass --watch src/scss:dist/css",
+    "build": "npm run build-ts && npm run build-scss",
+    "dev": "concurrently \"npm run watch-ts\" \"npm run watch-scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbena-jaser/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lbena-jaser/portfolio/issues"
+  },
+  "homepage": "https://github.com/lbena-jaser/portfolio#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "sass": "^1.87.0",
+    "typescript": "^5.8.3"
+  }
+}
