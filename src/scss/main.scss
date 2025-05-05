@@ -1,0 +1,35 @@
+/* CSS Reset and Base Styles */
+*, :after, :before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+}
+canvas, img, svg {
+  display: block;
+  max-width: 100%;
+}
+button, input, select, textarea {
+  font: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+  overflow-wrap: break-word;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+/* header css */
