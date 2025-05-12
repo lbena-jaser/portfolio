@@ -1,0 +1,125 @@
+/* CSS Reset and Base Styles */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Ruslan+Display&display=swap');
+
+*, :after, :before {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+  }
+  canvas, img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+  }
+  button, input, select, textarea {
+    font: inherit;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    overflow-wrap: break-word;
+  }
+  #__next, #root {
+    isolation: isolate;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  /*hero*/
+  .hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .heroContainer{
+    display: grid;
+    grid-template-areas: 
+    "lefth righth"
+    "bottomh bottomh";
+    gap: 5rem;
+  }
+  .leftHero{
+    grid-area: lefth;
+    
+  }
+  #photoContainer{
+    width: 18rem;
+    height: 20rem;
+    background-color: white;
+    transform: rotate(-5deg);
+  }
+  
+  .rightHero{
+    grid-area: righth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+    
+  }
+  .rightHero H1{
+    font-size: 3em;
+    line-height: 3rem;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .rightHero p{
+    max-width: 20rem;
+    line-height: 1rem;
+    font-family: monospace;
+  }
+  .BIGTEXT{
+    font-family: "Ruslan Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+  }
+  #middelRightHero{
+    margin-left: 3rem;
+  }
+  #bottomRightHero{
+    margin-left: 6rem;
+  }
+  .bottomHero{
+    grid-area: bottomh; 
+    display: flex;
+    flex-direction: column;
+  }
+  marquee svg{
+    display: inline-flex;
+    margin: 0 10px;
+  }
+  .heroContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: monospace;
+    font-size: 0.9em;
+  }
+  #email, #availabelforwork{
+    padding: 0.3rem;
+    border-radius: 20px;
+  }
+  #availabelforwork{
+    color: hsl(120, 50%, 31%);
+  }
+  
