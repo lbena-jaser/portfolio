@@ -9,13 +9,13 @@ window.addEventListener('load', function(): void {
         console.error('Projects section not found');
         return;
     }
- 
+    const projectsSectionTop: number = projectsSection.offsetTop;
+    const projectsSectionHeight: number = projectsSection.offsetHeight;
     // Update backgrounds and content based on scroll position
     function updateContent(): void {
         // Get scroll position relative to the projects section
         const scrollPosition: number = window.scrollY;
-        const projectsSectionTop: number = projectsSection.offsetTop;
-        const projectsSectionHeight: number = projectsSection.offsetHeight;
+        
         const relativeScroll: number = scrollPosition - projectsSectionTop;
       
         // Only update if we're in the projects section
