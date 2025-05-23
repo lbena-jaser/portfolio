@@ -155,8 +155,15 @@
     position: absolute;
     left: 22%;
     top: 2rem;
-    box-shadow: 10px 10px 10rem rgba(105, 105, 105, 0.76);
+    box-shadow: 20px 10px 10rem rgba(105, 105, 105, 0.76);
     transform: rotate(1deg);
+    z-index: 0;
+    transition: 0.1s linear;
+  }
+  .leftExp:hover{
+    box-shadow: none;
+    z-index: 1;
+    transform: rotate(-2deg);
   }
   .topLeftExp{
     background-image: url(../public/img/file_00000000700c61f89f286be7b7c1cefb.jpg);
@@ -195,6 +202,7 @@
     background-color: black;
     color: white;
     padding: 1rem 2rem;
+    height: 40%;
   }
   .skills h1 ,.techStack h1{
     font-family: "Alfa Slab One", serif;
@@ -223,8 +231,14 @@
     position: absolute;
     bottom: 2rem;
     right: 22%;
-    box-shadow: -10px -10px 9rem rgba(190, 168, 168, 0.438);
     transform: rotate(-2deg);
+    z-index: 0;
+    transition: 0.1s linear;
+  }
+  .rightExp:hover{
+    box-shadow: -10px -10px 9rem rgba(190, 168, 168, 0.438);
+    z-index: 1;
+    transform: rotate(1deg);
   }
   .RightExpTitel{
     font-family:"Alfa Slab One", serif;
