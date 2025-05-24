@@ -1,6 +1,4 @@
-// Wait for the DOM to load completely
 window.addEventListener('load', function(): void {
-    // Type definitions for DOM elements
     const backgrounds: NodeListOf<HTMLImageElement> = document.querySelectorAll('.bgImg');
     const projectsSection: HTMLElement | null = document.getElementById('projects-section');
     
